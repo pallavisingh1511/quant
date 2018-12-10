@@ -1,0 +1,59 @@
+@white: #fff;
+@blue: #03a7f2;
+@green: #33BB22;
+@purple: #8826DD;
+@yellow: #eebb00;
+
+
+body {
+    font-family: "Lato",Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+   
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+        .header {
+            padding: 20px 0;
+            .title {
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .profileImage {
+                float: right;
+                height: 28px;
+                border-radius: 50%;
+            }
+        }
+
+        .categoryCard {
+            background-color: @blue;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 20px 10px;
+            color: @white;
+            box-shadow: 0px 15px 20px -5px rgba(0,0,0,0.6);
+            display: block;
+            text-decoration: none;
+            
+            &:nth-child(2) {
+                background-color: @green;
+            }
+            &:nth-child(3) {
+                background-color: @purple;
+            }
+            &:nth-child(4) {
+                background-color: @yellow;
+            }
+            
+            .categoryTitle {
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .categoryCount {
+                font-size: 12px;
+            }
+        }
+    }
+}
